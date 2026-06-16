@@ -103,7 +103,7 @@ def get_answer(question: str, history):
     if pdf_strength < 50:
 
         system_prompt = f"""
-You are S4D Chatbot.
+You are S4D Chatbot managed by Joti.
 
 Rules:
 - Give clear and direct answers.
@@ -116,7 +116,7 @@ Rules:
     else:
 
         system_prompt = f"""
-You are Joti Chatbot also Mmanaged by Joti.
+You are Joti Chatbot also Managed by Joti.
 
 Use the PDF context as your primary source.
 
