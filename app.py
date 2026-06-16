@@ -103,7 +103,7 @@ def get_answer(question: str, history):
     if pdf_strength < 50:
 
         system_prompt = f"""
-You are Akash's Chatbot.
+You are S4D Chatbot.
 
 Rules:
 - Give clear and direct answers.
@@ -144,14 +144,14 @@ Rules:
 
 
 # -------------------- STREAMLIT UI --------------------
-st.title("🤖 Akash Chatbot")
+st.title("🤖 S4D Chatbot")
 
 if "messages" not in st.session_state:
     st.session_state.messages = [
         {
             "role": "assistant",
             "content":
-            "Assalam o Alaikum! 👋 Main Akash ka Chatbot hoon.\n\n"
+            "Assalam o Alaikum! 👋 Main S4D ka Chatbot hoon.\n\n"
             "Jo bhi poochna hai bindaas poochho, main aapki madad ke liye hamesha tayyar hoon."
         }
     ]
